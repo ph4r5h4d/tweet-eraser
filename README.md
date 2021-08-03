@@ -1,2 +1,2 @@
 # tweet-eraser
-This small app help you delete your old twit
+This small app help you delete your old tweets
