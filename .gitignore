@@ -16,3 +16,10 @@
 
 # IDE settings
 .idea/
+
+# Report file
+report.log
+
+# Misc
+*.json
+*.zip
