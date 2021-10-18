@@ -13,6 +13,7 @@ type config struct {
 	AuthorizationToken string
 	AuthToken          string
 	CSRFToken          string
+	DaysOffset         float64
 }
 
 var (
@@ -25,6 +26,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&cfg.AuthorizationToken, "authorization", "", "Your authorization code")
 	rootCmd.PersistentFlags().StringVar(&cfg.AuthToken, "authToken", "", "Your authToken from cookie")
 	rootCmd.PersistentFlags().StringVar(&cfg.CSRFToken, "csrfToken", "", "Your csrf token from cookie (ct0)")
+	rootCmd.PersistentFlags().Float64Var(&cfg.DaysOffset, "offset", 0, "Up until when should I delete the tweets.")
 }
 
 var rootCmd = &cobra.Command{
@@ -38,7 +40,7 @@ func Execute() {
 	file, err := os.OpenFile(logPath, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
 	if err != nil {
 		// Can we log an error before we have our logger? :)
-		log.Error().Err(err).Msg("there was an error creating a file four our log")
+		log.Error().Err(err).Msg("there was an error creating a file for our log")
 		os.Exit(1)
 	}
 	multi := zerolog.MultiLevelWriter(consoleWriter, file)
