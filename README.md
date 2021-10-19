@@ -40,7 +40,11 @@ A sample would be like the following:
 Look at the `--offset=730`, this means all tweets older than 730 days (2 years) will be deleted.
 
 ## Using the Docker image
+First pull the image:
+```bash
+docker pull ph4r5h4d/tweet-eraser:latest
+```
 Well, put the file in a directory you want to run the command from and do the following:  
 ```bash
-docker run -v $(pwd)/YOURT_BACKUP.ZIP:/app/twitter.zip te:v1 --file=twitter.zip --offset=730 --authorizaion=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
+docker run -v $(pwd)/YOURT_BACKUP.ZIP:/app/twitter.zip tweet-eraser:latest --file=twitter.zip --offset=730 --authorizaion=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
 ```
