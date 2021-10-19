@@ -1,0 +1,33 @@
+name: Tweet Eraser CI
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build docker image
+        run: docker build . --file Dockerfile --tag tweet-eraser
+      - name: Logging into docker hub
+        run: echo "${{ secrets.dockerhubpwd }}" | docker login --username ph4r5h4d --password-stdin
+      - name: Tag and push
+        run: |
+          IMAGE=ph4r5h4d/tweet-eraser
+
+          # Strip git ref prefix from version
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+          # Strip "v" prefix from tag name
+          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+
+          echo $IMAGE
+          echo $VERSION
+
+          docker tag tweet-eraser $IMAGE:$VERSION
+          docker tag tweet-eraser $IMAGE:latest
+
+          docker push $IMAGE:$VERSION
+          docker push $IMAGE:latest
