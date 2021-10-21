@@ -1,5 +1,5 @@
 # tweet-eraser
-This small app help you delete your old tweets
+This small app helps you delete your old tweets
 
 # Important notes
 - This app is designed to run from your local machine (laptop, pc or ...). It will not store any information anywhere at all.
@@ -7,7 +7,7 @@ This small app help you delete your old tweets
   - The builds and Docker images are solely there to make your life easier, but I highly advise you to build the application yourself.
 
 - This Application is provided as-is. I will not be responsible for any possible problem that may happen to your data and account.
-  I tried my best to make sure it won't harm anything, but Twitter may change its API or put limitations which 
+  I tried my best to make sure it won't harm anything, but Twitter may change its API or put limitations which
   I'll then try to react and make sure this app will continue to work for as long as possible, But there will be no guarantee.
 
 
@@ -40,11 +40,11 @@ A sample would be like the following:
 Look at the `--offset=730`, this means all tweets older than 730 days (2 years) will be deleted.
 
 ## Using the Docker image
-First pull the image:
+First, pull the image:
 ```bash
 docker pull ph4r5h4d/tweet-eraser:latest
 ```
-Well, put the file in a directory you want to run the command from and do the following:  
+Well, put the file in a directory you want to run the command from and do the following:
 ```bash
 docker run -v $(pwd)/YOURT_BACKUP.ZIP:/app/twitter.zip tweet-eraser:latest --file=twitter.zip --offset=730 --authorizaion=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
 ```
