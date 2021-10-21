@@ -1,4 +1,4 @@
-name: Tweet Eraser CI
+name: Tweet Eraser Build
 
 on:
   push:
