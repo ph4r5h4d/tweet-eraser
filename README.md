@@ -1,3 +1,8 @@
+[![Tweet Eraser Build](https://github.com/ph4r5h4d/tweet-eraser/actions/workflows/cd.yaml/badge.svg)](https://github.com/ph4r5h4d/tweet-eraser/actions/workflows/cd.yaml)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/ph4r5h4d/tweet-eraser)](https://github.com/ph4r5h4d/tweet-eraser)
+[![Docker pull](https://img.shields.io/docker/pulls/ph4r5h4d/tweet-eraser)](https://hub.docker.com/r/ph4r5h4d/tweet-eraser)
+[![App release](https://img.shields.io/github/v/release/Ph4r5h4d/tweet-eraser)](https://github.com/ph4r5h4d/tweet-eraser/releases)
+[![App License](https://img.shields.io/github/license/ph4r5h4d/tweet-eraser)](https://github.com/ph4r5h4d/tweet-eraser/blob/main/LICENSE)
 # tweet-eraser
 This small app helps you delete your old tweets
 
