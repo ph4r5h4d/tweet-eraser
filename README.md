@@ -21,7 +21,7 @@ Just download the app from the release page, and you should be good to go.
 
 If you are crazy enough to build the app, you need to install the latest version of the Go and clone the repo, and just run:
 ```
-go build -o te
+go build
 ``` 
 And there should be a binary package ready to be used by you or any alien species using the same OS.
 
