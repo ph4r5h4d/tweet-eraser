@@ -39,7 +39,7 @@ Let's go over the parameters and see what they are and where you should obtain t
 
 A sample would be like the following:
 ```bash
-./te --file=twitter.zip --offset=730 --authorizaion=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
+./te --file=twitter.zip --offset=730 --authorization=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
 ```
 
 Look at the `--offset=730`, this means all tweets older than 730 days (2 years) will be deleted.
