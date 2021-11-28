@@ -4,12 +4,15 @@
 [![App release](https://img.shields.io/github/v/release/Ph4r5h4d/tweet-eraser)](https://github.com/ph4r5h4d/tweet-eraser/releases)
 [![App License](https://img.shields.io/github/license/ph4r5h4d/tweet-eraser)](https://github.com/ph4r5h4d/tweet-eraser/blob/main/LICENSE)
 # tweet-eraser
-This small app helps you delete your old tweets
+This small app helps you delete your old tweets.
+The purpose of this app is to imitate the browser to delete old tweets.
+Hence it's not required for you to have a Twitter application.  
+Follow the guide and read the notes to use this app.
 
 # Important notes
 - This app is designed to run from your local machine (laptop, pc or ...). It will not store any information anywhere at all.
   - You are advised to check the source code and build the application yourself if you want to be entirely sure.
-  - The builds and Docker images are solely there to make your life easier, but I highly advise you to build the application yourself.
+  - The builds and Docker images are solely there to make your life easier.
 
 - This Application is provided as-is. I will not be responsible for any possible problem that may happen to your data and account.
   I tried my best to make sure it won't harm anything, but Twitter may change its API or put limitations which
