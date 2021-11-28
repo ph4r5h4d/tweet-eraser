@@ -20,7 +20,7 @@ Follow the guide and read the notes to use this app.
 
 
 ## Requirements
-Just download the app from the release page, and you should be good to go.
+Just download the app from the [release page](https://github.com/ph4r5h4d/tweet-eraser/releases), and you should be good to go.
 
 If you are crazy enough to build the app, you need to install the latest version of the Go and clone the repo, and just run:
 ```
