@@ -54,5 +54,5 @@ docker pull ph4r5h4d/tweet-eraser:latest
 ```
 Well, put the file in a directory you want to run the command from and do the following:
 ```bash
-docker run -v $(pwd)/YOURT_BACKUP.ZIP:/app/twitter.zip ph4r5h4d/tweet-eraser:latest --file=twitter.zip --offset=730 --authorizaion=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
+docker run -v $(pwd)/YOURT_BACKUP.ZIP:/app/twitter.zip ph4r5h4d/tweet-eraser:latest --file=twitter.zip --offset=730 --authorization=YOUR_BEARER_TOKEN --authToken=YOUR_COOKIE_AUTH_TOKEN --csrfToken=YOUR_COOKIE_CSRF_TOKEN
 ```
