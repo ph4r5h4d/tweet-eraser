@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	tweetJsPath       = ".tmp/twdata/data/tweet.js"
+	tweetJsPath       = ".tmp/twdata/data/tweets.js"
 	zipExtractionPath = ".tmp/twdata"
 	tweetJsonPath     = "./.tmp/tweets.json"
 )
